@@ -147,6 +147,7 @@ public final class RatingManager: ObservableObject {
 /// ```swift
 /// .requestReviewAfterSuccess(rating, when: syncDidFinish)
 /// ```
+@available(iOS 17.0, macOS 14.0, *)
 public struct RequestReviewAfterSuccess: ViewModifier {
     @Environment(\.requestReview) private var requestReview
     @ObservedObject var manager: RatingManager
@@ -166,6 +167,7 @@ public struct RequestReviewAfterSuccess: ViewModifier {
     }
 }
 
+@available(iOS 17.0, macOS 14.0, *)
 public extension View {
     func requestReviewAfterSuccess(_ manager: RatingManager, when trigger: Bool) -> some View {
         modifier(RequestReviewAfterSuccess(manager: manager, trigger: trigger))

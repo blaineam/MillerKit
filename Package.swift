@@ -11,11 +11,15 @@ import PackageDescription
 let package = Package(
     name: "MillerKit",
     defaultLocalization: "en",
+    // Deliberately low: Glint still ships to macOS 13, and a shared kit that
+    // forces every app to raise its deployment target is a shared kit nobody
+    // adopts. The one API that genuinely needs newer (the two-parameter
+    // onChange behind requestReviewAfterSuccess) carries its own @available.
     platforms: [
-        .iOS(.v17),
-        .macOS(.v14),
-        .tvOS(.v17),
-        .watchOS(.v10),
+        .iOS(.v16),
+        .macOS(.v13),
+        .tvOS(.v16),
+        .watchOS(.v9),
     ],
     products: [
         .library(name: "MillerKit", targets: ["MillerKit"]),
