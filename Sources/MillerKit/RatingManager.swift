@@ -136,7 +136,10 @@ public final class RatingManager: ObservableObject {
 
 // MARK: - The view-side hook
 
-#if !os(tvOS)
+// tvOS and watchOS have no review sheet — `\.requestReview` doesn't exist
+// there. The manager above still compiles and counts on those platforms so a
+// watch app can feed the same gate state the phone reads.
+#if !os(tvOS) && !os(watchOS)
 /// Attach to the view that represents a completed, successful outcome. When the
 /// gates are met it asks StoreKit once, through the SwiftUI environment action
 /// so the system resolves the host window itself.
