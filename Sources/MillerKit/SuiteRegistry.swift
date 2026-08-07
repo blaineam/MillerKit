@@ -47,6 +47,31 @@ public extension SuiteApp {
         appStoreID: "6451395651", pageURL: page("mi-speaks")
     )
 
+    static let deepSi = SuiteApp(
+        name: "DeepSi", supportEmail: "blaine@wemiller.com",
+        appStoreID: "6449420511", pageURL: page("deepsi")
+    )
+    static let lumaEditor = SuiteApp(
+        name: "Luma Editor", supportEmail: "blaine@wemiller.com",
+        appStoreID: "6741085424", pageURL: page("luma-editor")
+    )
+    static let revela = SuiteApp(
+        name: "Revela", supportEmail: "blaine@wemiller.com",
+        appStoreID: "6791874917", pageURL: page("revela")
+    )
+    static let sightQuick = SuiteApp(
+        name: "SightQuick", supportEmail: "blaine@wemiller.com",
+        appStoreID: "6776991403", pageURL: page("sightquick")
+    )
+
+    /// Glint ships outside the App Store (direct Mac download), so it has no
+    /// App Store ID — `writeReviewURL` is nil and LoveThisAppSection quietly
+    /// drops the rate row, leaving just the link to the other apps.
+    static let glint = SuiteApp(
+        name: "Glint", supportEmail: "blaine@wemiller.com",
+        appStoreID: nil, pageURL: page("glint")
+    )
+
     // ── Games ──────────────────────────────────────────────────────────────
     // Games get the rating prompt and the "other apps" link, but not the
     // guided bug-report form: a stuck player writes "it's too hard", and the
@@ -62,5 +87,18 @@ public extension SuiteApp {
     static let zap = SuiteApp(
         name: "Zap", supportEmail: "blaine@wemiller.com",
         appStoreID: "6776907420", pageURL: page("zap")
+    )
+
+    static let pinline = SuiteApp(
+        name: "Pinline", supportEmail: "blaine@wemiller.com",
+        appStoreID: "6772773442", pageURL: page("pinline")
+    )
+    static let ridgeshot = SuiteApp(
+        name: "Ridgeshot", supportEmail: "blaine@wemiller.com",
+        appStoreID: "6774483008", pageURL: page("ridgeshot")
+    )
+    static let wiseFlyer = SuiteApp(
+        name: "Wise Flyer", supportEmail: "blaine@wemiller.com",
+        appStoreID: "853900499", pageURL: page("wise-flyer")
     )
 }
