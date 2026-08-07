@@ -1,7 +1,72 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-
+    "%@ is made by one person, with no ads, no tracking, and no venture money behind it. A rating takes ten seconds and genuinely decides whether anyone else ever sees it." : {
+      "comment" : "Footer explaining why a rating matters"
+    },
+    "App version" : {
+      "comment" : "Label in a bug report's diagnostic block"
+    },
+    "Ask a Question" : {
+      "comment" : "Button that opens an email to ask a support question"
+    },
+    "Bug Report" : {
+      "comment" : "Email subject suffix"
+    },
+    "Built by one person, same care" : {
+      "comment" : "Subtitle under the other-apps button"
+    },
+    "Device" : {
+      "comment" : "Label in a bug report's diagnostic block"
+    },
+    "Enjoying %@?" : {
+      "comment" : "Section header above the rate/more-apps buttons; parameter is the app name"
+    },
+    "Feature Request" : {
+      "comment" : "Email subject suffix"
+    },
+    "Feedback & Support" : {
+      "comment" : "Section header above the contact-the-developer buttons"
+    },
+    "Hi Blaine,\n\nI have a question about %@.\n\nWhat I'm trying to do:\n\n\nWhat I've tried so far:\n" : {
+      "comment" : "Body template for a support question email; %@ is the app name"
+    },
+    "Hi Blaine,\n\nI have an idea for %@.\n\nWhat I'd like to be able to do:\n\n\nWhy it would help / the problem it solves:\n\n\nHow I imagine it working:\n" : {
+      "comment" : "Body template for a feature request email; %@ is the app name"
+    },
+    "Hi Blaine,\n\nI ran into a problem with %@.\n\nWhat went wrong:\n\n\nSteps to reproduce:\n1.\n2.\n3.\n\nWhat I expected to happen:\n\n\nHow often it happens (always / sometimes / once):\n" : {
+      "comment" : "Body template for a bug report email; %@ is the app name"
+    },
+    "I can't fix what I don't know about. If something is broken, confusing, or missing, email me — one person reads every message, and a fix for you is a fix for everyone." : {
+      "comment" : "Footer under the feedback buttons, explaining why to write in"
+    },
+    "Language" : {
+      "comment" : "Label in a bug report's diagnostic block"
+    },
+    "My Other Apps" : {
+      "comment" : "Button that opens the developer's app portfolio"
+    },
+    "Question" : {
+      "comment" : "Email subject suffix"
+    },
+    "Rate %@" : {
+      "comment" : "Button title; parameter is the app name"
+    },
+    "Ratings are how people find it" : {
+      "comment" : "Subtitle under the rate button"
+    },
+    "Report an Issue" : {
+      "comment" : "Button that opens an email to report a bug"
+    },
+    "Suggest a Feature" : {
+      "comment" : "Button that opens an email to request a feature"
+    },
+    "System" : {
+      "comment" : "Label in a bug report's diagnostic block"
+    },
+    "These details help me diagnose it — please leave them in:" : {
+      "comment" : "Explains the diagnostic block at the bottom of a feedback email"
+    }
   },
   "version" : "1.0"
 }

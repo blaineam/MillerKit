@@ -28,6 +28,9 @@ public struct SupportSection: View {
             row(.bug, title: String(localized: "Report an Issue", bundle: .module, comment: "Button that opens an email to report a bug"), icon: "ladybug.fill")
             row(.feature, title: String(localized: "Suggest a Feature", bundle: .module, comment: "Button that opens an email to request a feature"), icon: "lightbulb.fill")
             row(.question, title: String(localized: "Ask a Question", bundle: .module, comment: "Button that opens an email to ask a support question"), icon: "questionmark.circle.fill")
+            // Renders nothing when the app is running in English, so it can sit
+            // here unconditionally in every app.
+            TranslationFeedbackButton(app: app)
         } header: {
             Text("Feedback & Support", bundle: .module, comment: "Section header above the contact-the-developer buttons")
         } footer: {

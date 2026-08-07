@@ -67,6 +67,7 @@ public struct SupportRows: View {
             ForEach(FeedbackKind.allCases, id: \.self) { kind in
                 FeedbackButton(app: app, kind: kind, extraContext: extraContext)
             }
+            TranslationFeedbackButton(app: app)
             Text("I can't fix what I don't know about. If something is broken, confusing, or missing, email me — one person reads every message, and a fix for you is a fix for everyone.", bundle: .module, comment: "Footer under the feedback buttons, explaining why to write in")
                 .font(.caption)
                 .foregroundColor(.secondary)

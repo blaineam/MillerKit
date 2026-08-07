@@ -100,3 +100,54 @@ final class RatingManagerTests: XCTestCase {
         XCTAssertEqual(m.attemptCount, 0)
     }
 }
+
+final class TranslationFeedbackTests: XCTestCase {
+    let app = SuiteApp(name: "Enter Space", supportEmail: "enter-space@wemiller.com", appStoreID: "6746350540")
+
+    /// The row must not appear for English speakers — they have nothing to
+    /// report, and an untargeted ask is just noise in every settings screen.
+    func testNotApplicableInEnglish() {
+        XCTAssertFalse(TranslationFeedback.isApplicable(bundle: .main),
+                       "test bundle runs in English, so the flow must stay hidden")
+        XCTAssertTrue(TranslationFeedback.activeLocalization(bundle: .main).hasPrefix("en"))
+    }
+
+    func testMailtoCarriesTheAnswersAndTheLocale() throws {
+        let url = try XCTUnwrap(TranslationFeedback.mailtoURL(
+            app: app,
+            screen: "Settings screen",
+            currentWording: "Speicher & Sicherung",
+            suggestedWording: "Speicher und Backup",
+            notes: "The ampersand reads oddly here"
+        ))
+        let decoded = try XCTUnwrap(url.absoluteString.removingPercentEncoding)
+        XCTAssertTrue(decoded.contains("Settings screen"))
+        XCTAssertTrue(decoded.contains("Speicher & Sicherung"))
+        XCTAssertTrue(decoded.contains("Speicher und Backup"))
+        XCTAssertTrue(decoded.contains("The ampersand reads oddly here"))
+        // The confirmed prerequisites travel with the report, so the reply can
+        // assume a conversation is welcome.
+        XCTAssertTrue(decoded.contains("happy to go back and forth"))
+    }
+
+    /// Non-Latin and ampersand-bearing wording is exactly what this flow
+    /// carries, so the query must survive it.
+    func testNonLatinWordingSurvivesEncoding() throws {
+        let url = try XCTUnwrap(TranslationFeedback.mailtoURL(
+            app: app, screen: "ホーム画面", currentWording: "保存 & 共有",
+            suggestedWording: "保存と共有", notes: ""
+        ))
+        let query = try XCTUnwrap(url.query)
+        XCTAssertEqual(query.components(separatedBy: "&").count, 2, "only the subject/body separator may be a bare &")
+        let decoded = try XCTUnwrap(url.absoluteString.removingPercentEncoding)
+        XCTAssertTrue(decoded.contains("保存と共有"))
+    }
+
+    func testOptionalNotesAreOmittedWhenBlank() throws {
+        let url = try XCTUnwrap(TranslationFeedback.mailtoURL(
+            app: app, screen: "A", currentWording: "B", suggestedWording: "C", notes: "   "
+        ))
+        let decoded = try XCTUnwrap(url.absoluteString.removingPercentEncoding)
+        XCTAssertFalse(decoded.contains("Why / anything else:"))
+    }
+}
