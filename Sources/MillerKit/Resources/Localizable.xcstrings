@@ -1,72 +1,2368 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "%@ is made by one person, with no ads, no tracking, and no venture money behind it. A rating takes ten seconds and genuinely decides whether anyone else ever sees it." : {
-      "comment" : "Footer explaining why a rating matters"
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ is made by one person, with no ads, no tracking, and no venture money behind it. A rating takes ten seconds and genuinely decides whether anyone else ever sees it.": {
+      "comment": "Footer explaining why a rating matters",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ wird von einer einzelnen Person entwickelt – ohne Werbung, ohne Tracking und ohne Risikokapital im Hintergrund. Eine Bewertung dauert zehn Sekunden und entscheidet ganz real darüber, ob die App jemals von jemand anderem gesehen wird."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ lo hace una sola persona, sin anuncios, sin seguimiento y sin capital de riesgo detrás. Dejar una valoración lleva diez segundos y es lo que de verdad decide si alguien más llega a conocer la app."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ est développé par une seule personne, sans publicité, sans suivi et sans capital-risque. Une note prend dix secondes et détermine vraiment si quelqu'un d'autre le découvrira un jour."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ è realizzato da una sola persona, senza pubblicità, senza tracciamento e senza capitali di rischio alle spalle. Lasciare una valutazione richiede dieci secondi e decide davvero se qualcun altro lo scoprirà."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ は個人が開発しており、広告もトラッキングもベンチャー資金もありません。評価は10秒で終わりますが、ほかの誰かの目に触れるかどうかを本当に左右します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@은(는) 광고도, 추적도, 투자금도 없이 한 사람이 만드는 앱입니다. 평가는 10초면 끝나지만, 다른 사람이 이 앱을 발견할 수 있을지를 실제로 좌우합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ é feito por uma só pessoa, sem anúncios, sem rastreamento e sem capital de risco por trás. Uma avaliação leva dez segundos e realmente decide se mais alguém vai conhecê-lo."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 由一个人独立开发，没有广告，没有跟踪，背后也没有风险投资。评分只需十秒，却真的决定了还有没有别人能看到它。"
+          }
+        }
+      }
     },
-    "App version" : {
-      "comment" : "Label in a bug report's diagnostic block"
+    "Anything else worth knowing (optional)": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonstiges Wissenswertes (optional)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cualquier otra cosa que convenga saber (opcional)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autre chose à savoir (facultatif)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altro che vale la pena sapere (facoltativo)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ほかに伝えておきたいこと（任意）"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "그 외에 알아두면 좋은 내용 (선택)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mais alguma coisa que eu deva saber (opcional)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他需要了解的信息（可选）"
+          }
+        }
+      }
     },
-    "Ask a Question" : {
-      "comment" : "Button that opens an email to ask a support question"
+    "App version": {
+      "comment": "Label in a bug report's diagnostic block",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App-Version"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versión de la app"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version de l'app"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versione dell'app"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appのバージョン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱 버전"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versão do app"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App 版本"
+          }
+        }
+      }
     },
-    "Bug Report" : {
-      "comment" : "Email subject suffix"
+    "Ask a Question": {
+      "comment": "Button that opens an email to ask a support question",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frage stellen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hacer una pregunta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poser une question"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fai una domanda"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "質問する"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "질문하기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fazer uma pergunta"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提问"
+          }
+        }
+      }
     },
-    "Built by one person, same care" : {
-      "comment" : "Subtitle under the other-apps button"
+    "Before we start": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bevor wir anfangen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antes de empezar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avant de commencer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prima di iniziare"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "はじめる前に"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시작하기 전에"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antes de começar"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始之前"
+          }
+        }
+      }
     },
-    "Device" : {
-      "comment" : "Label in a bug report's diagnostic block"
+    "Bug Report": {
+      "comment": "Email subject suffix",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fehlerbericht"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informe de error"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signalement de bug"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segnalazione bug"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バグ報告"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "버그 신고"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relatório de erro"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "错误报告"
+          }
+        }
+      }
     },
-    "Enjoying %@?" : {
-      "comment" : "Section header above the rate/more-apps buttons; parameter is the app name"
+    "Built by one person, same care": {
+      "comment": "Subtitle under the other-apps button",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Von einer Person entwickelt, mit derselben Sorgfalt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hechas por una persona, con el mismo cuidado"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Développé par une seule personne, avec le même soin"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sviluppate da una sola persona, con la stessa cura"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "どれも個人が同じこだわりで開発"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 사람이, 같은 정성으로 만듭니다"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feito por uma só pessoa, com o mesmo cuidado"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一个人开发，同样用心"
+          }
+        }
+      }
     },
-    "Feature Request" : {
-      "comment" : "Email subject suffix"
+    "Cancel": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abbrechen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulla"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취소"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
+          }
+        }
+      }
     },
-    "Feedback & Support" : {
-      "comment" : "Section header above the contact-the-developer buttons"
+    "Device": {
+      "comment": "Label in a bug report's diagnostic block",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerät"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dispositivo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appareil"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dispositivo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバイス"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dispositivo"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设备"
+          }
+        }
+      }
     },
-    "Hi Blaine,\n\nI have a question about %@.\n\nWhat I'm trying to do:\n\n\nWhat I've tried so far:\n" : {
-      "comment" : "Body template for a support question email; %@ is the app name"
+    "Displaying:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anzeige:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrando:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affichage :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visualizzato in:"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "表示中:"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "표시 중:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exibindo:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当前显示："
+          }
+        }
+      }
     },
-    "Hi Blaine,\n\nI have an idea for %@.\n\nWhat I'd like to be able to do:\n\n\nWhy it would help / the problem it solves:\n\n\nHow I imagine it working:\n" : {
-      "comment" : "Body template for a feature request email; %@ is the app name"
+    "Done": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fertig"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fine"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "완료"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concluído"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成"
+          }
+        }
+      }
     },
-    "Hi Blaine,\n\nI ran into a problem with %@.\n\nWhat went wrong:\n\n\nSteps to reproduce:\n1.\n2.\n3.\n\nWhat I expected to happen:\n\n\nHow often it happens (always / sometimes / once):\n" : {
-      "comment" : "Body template for a bug report email; %@ is the app name"
+    "Enjoying %@?": {
+      "comment": "Section header above the rate/more-apps buttons; parameter is the app name",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gefällt dir %@?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Te gusta %@?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous aimez %@ ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ti piace %@?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ はいかがですか？"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@이(가) 마음에 드시나요?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gostando de %@?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "喜欢 %@ 吗？"
+          }
+        }
+      }
     },
-    "I can't fix what I don't know about. If something is broken, confusing, or missing, email me — one person reads every message, and a fix for you is a fix for everyone." : {
-      "comment" : "Footer under the feedback buttons, explaining why to write in"
+    "Feature Request": {
+      "comment": "Email subject suffix",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funktionswunsch"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugerencia de función"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demande de fonctionnalité"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richiesta di funzionalità"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "機能のリクエスト"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기능 제안"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pedido de recurso"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "功能建议"
+          }
+        }
+      }
     },
-    "Language" : {
-      "comment" : "Label in a bug report's diagnostic block"
+    "Feedback & Support": {
+      "comment": "Section header above the contact-the-developer buttons",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feedback & Support"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comentarios y soporte"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commentaires et assistance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feedback e assistenza"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フィードバックとサポート"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "피드백 및 지원"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feedback e suporte"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "反馈与支持"
+          }
+        }
+      }
     },
-    "My Other Apps" : {
-      "comment" : "Button that opens the developer's app portfolio"
+    "Hi Blaine,\n\nI have a question about %@.\n\nWhat I'm trying to do:\n\n\nWhat I've tried so far:\n": {
+      "comment": "Body template for a support question email; %@ is the app name",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hallo Blaine,\n\nich habe eine Frage zu %@.\n\nWas ich vorhabe:\n\n\nWas ich bisher versucht habe:\n"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hola Blaine:\n\nTengo una pregunta sobre %@.\n\nLo que intento hacer:\n\n\nLo que he probado hasta ahora:\n"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonjour Blaine,\n\nJ'ai une question à propos de %@.\n\nCe que j'essaie de faire :\n\n\nCe que j'ai déjà essayé :\n"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciao Blaine,\n\nHo una domanda su %@.\n\nCosa sto cercando di fare:\n\n\nCosa ho provato finora:\n"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaine さん、\n\n%@ について質問があります。\n\nやりたいこと:\n\n\nこれまでに試したこと:\n"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaine님, 안녕하세요.\n\n%@에 대해 질문이 있습니다.\n\n하려는 작업:\n\n\n지금까지 시도해 본 것:\n"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Olá, Blaine,\n\nTenho uma dúvida sobre %@.\n\nO que estou tentando fazer:\n\n\nO que já tentei:\n"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你好 Blaine，\n\n我有一个关于 %@ 的问题。\n\n我想做的事：\n\n\n我已经尝试过的：\n"
+          }
+        }
+      }
     },
-    "Question" : {
-      "comment" : "Email subject suffix"
+    "Hi Blaine,\n\nI have an idea for %@.\n\nWhat I'd like to be able to do:\n\n\nWhy it would help / the problem it solves:\n\n\nHow I imagine it working:\n": {
+      "comment": "Body template for a feature request email; %@ is the app name",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hallo Blaine,\n\nich habe eine Idee für %@.\n\nWas ich gerne tun können würde:\n\n\nWarum es helfen würde / welches Problem es löst:\n\n\nWie ich mir die Umsetzung vorstelle:\n"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hola Blaine:\n\nTengo una idea para %@.\n\nLo que me gustaría poder hacer:\n\n\nPor qué ayudaría / el problema que resuelve:\n\n\nCómo me imagino que funcionaría:\n"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonjour Blaine,\n\nJ'ai une idée pour %@.\n\nCe que j'aimerais pouvoir faire :\n\n\nEn quoi cela m'aiderait / le problème que cela résout :\n\n\nComment je l'imagine fonctionner :\n"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciao Blaine,\n\nHo un'idea per %@.\n\nCosa vorrei poter fare:\n\n\nPerché sarebbe utile / il problema che risolve:\n\n\nCome immagino che funzioni:\n"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaine さん、\n\n%@ について提案があります。\n\nできるようになりたいこと:\n\n\n役立つ理由／解決したい問題:\n\n\n動作のイメージ:\n"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaine님, 안녕하세요.\n\n%@에 대한 아이디어가 있습니다.\n\n할 수 있으면 좋겠는 것:\n\n\n도움이 되는 이유 / 해결되는 문제:\n\n\n어떻게 동작하면 좋을지:\n"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Olá, Blaine,\n\nTenho uma ideia para %@.\n\nO que eu gostaria de poder fazer:\n\n\nPor que ajudaria / o problema que resolve:\n\n\nComo imagino que funcionaria:\n"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你好 Blaine，\n\n我对 %@ 有一个想法。\n\n我希望能够做到：\n\n\n它有什么帮助／能解决什么问题：\n\n\n我设想的使用方式：\n"
+          }
+        }
+      }
     },
-    "Rate %@" : {
-      "comment" : "Button title; parameter is the app name"
+    "Hi Blaine,\n\nI ran into a problem with %@.\n\nWhat went wrong:\n\n\nSteps to reproduce:\n1.\n2.\n3.\n\nWhat I expected to happen:\n\n\nHow often it happens (always / sometimes / once):\n": {
+      "comment": "Body template for a bug report email; %@ is the app name",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hallo Blaine,\n\nich bin bei %@ auf ein Problem gestoßen.\n\nWas schiefgelaufen ist:\n\n\nSchritte zum Reproduzieren:\n1.\n2.\n3.\n\nWas ich erwartet habe:\n\n\nWie oft es auftritt (immer / manchmal / einmalig):\n"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hola Blaine:\n\nHe tenido un problema con %@.\n\nQué ha fallado:\n\n\nPasos para reproducirlo:\n1.\n2.\n3.\n\nQué esperaba que pasara:\n\n\nCon qué frecuencia ocurre (siempre / a veces / una vez):\n"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonjour Blaine,\n\nJ'ai rencontré un problème avec %@.\n\nCe qui s'est mal passé :\n\n\nÉtapes pour reproduire :\n1.\n2.\n3.\n\nCe à quoi je m'attendais :\n\n\nFréquence (toujours / parfois / une seule fois) :\n"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciao Blaine,\n\nHo riscontrato un problema con %@.\n\nCosa non ha funzionato:\n\n\nPassaggi per riprodurlo:\n1.\n2.\n3.\n\nCosa mi aspettavo che succedesse:\n\n\nCon quale frequenza accade (sempre / a volte / una volta):\n"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaine さん、\n\n%@ で問題が発生しました。\n\n起きたこと:\n\n\n再現手順:\n1.\n2.\n3.\n\n期待していた動作:\n\n\n発生頻度（毎回／ときどき／1回だけ）:\n"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaine님, 안녕하세요.\n\n%@에서 문제가 발생했습니다.\n\n어떤 문제가 있었는지:\n\n\n재현 방법:\n1.\n2.\n3.\n\n기대했던 동작:\n\n\n발생 빈도 (항상 / 때때로 / 한 번):\n"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Olá, Blaine,\n\nTive um problema com %@.\n\nO que deu errado:\n\n\nPassos para reproduzir:\n1.\n2.\n3.\n\nO que eu esperava que acontecesse:\n\n\nCom que frequência acontece (sempre / às vezes / uma vez):\n"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你好 Blaine，\n\n我在使用 %@ 时遇到了问题。\n\n出了什么问题：\n\n\n复现步骤：\n1.\n2.\n3.\n\n我期望的结果：\n\n\n出现频率（总是／有时／仅一次）：\n"
+          }
+        }
+      }
     },
-    "Ratings are how people find it" : {
-      "comment" : "Subtitle under the rate button"
+    "Hi Blaine,\n\nI'd like to help improve the %1$@ translation in %2$@.\n": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hallo Blaine,\n\nich möchte helfen, die Übersetzung von %2$@ auf %1$@ zu verbessern.\n"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hola Blaine:\n\nMe gustaría ayudar a mejorar la traducción al %1$@ en %2$@.\n"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bonjour Blaine,\n\nJ'aimerais aider à améliorer la traduction en %1$@ de %2$@.\n"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciao Blaine,\n\nVorrei contribuire a migliorare la traduzione in %1$@ di %2$@.\n"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaine さん、\n\n%2$@ の%1$@翻訳の改善に協力したいです。\n"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blaine님, 안녕하세요.\n\n%2$@의 %1$@ 번역을 개선하는 데 도움을 드리고 싶습니다.\n"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Olá, Blaine,\n\nGostaria de ajudar a melhorar a tradução para %1$@ em %2$@.\n"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你好 Blaine，\n\n我想帮忙改进 %2$@ 中的 %1$@ 翻译。\n"
+          }
+        }
+      }
     },
-    "Report an Issue" : {
-      "comment" : "Button that opens an email to report a bug"
+    "I can't fix what I don't know about. If something is broken, confusing, or missing, email me — one person reads every message, and a fix for you is a fix for everyone.": {
+      "comment": "Footer under the feedback buttons, explaining why to write in",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich kann nichts beheben, wovon ich nichts weiß. Wenn etwas kaputt, verwirrend oder gar nicht vorhanden ist, schreib mir eine E-Mail – eine Person liest jede Nachricht, und was für dich behoben wird, ist für alle behoben."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No puedo arreglar lo que no sé. Si algo no funciona, confunde o falta, escríbeme: una sola persona lee todos los mensajes, y arreglarlo para ti es arreglarlo para todos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je ne peux pas corriger ce que j'ignore. Si quelque chose ne fonctionne pas, prête à confusion ou manque, écrivez-moi : une seule personne lit chaque message, et une correction pour vous en est une pour tout le monde."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non posso risolvere ciò di cui non so nulla. Se qualcosa non funziona, non è chiaro o manca, scrivimi: ogni messaggio lo legge una persona sola, e una correzione per te è una correzione per tutti."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "知らない問題は直せません。動かない、分かりにくい、足りない——そんなときはメールしてください。すべてのメッセージに開発者本人が目を通します。あなたのための修正は、みんなのための修正になります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모르는 문제는 고칠 수 없습니다. 무언가 잘못되었거나, 헷갈리거나, 빠져 있다면 이메일을 보내주세요. 모든 메일을 한 사람이 직접 읽으며, 한 분을 위한 수정은 모두를 위한 수정이 됩니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não posso consertar o que não sei que existe. Se algo estiver quebrado, confuso ou faltando, me mande um e-mail — uma só pessoa lê todas as mensagens, e um conserto para você é um conserto para todo mundo."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我不知道的问题，就没法修复。如果有什么出错了、让人困惑或者缺失了，请给我发邮件——每一封都由我一个人阅读，为你修好的问题，也就为所有人修好了。"
+          }
+        }
+      }
     },
-    "Suggest a Feature" : {
-      "comment" : "Button that opens an email to request a feature"
+    "I only speak English, so getting a translation right means a few messages back and forth. If that isn't something you want to do, please still report it as a normal issue — I'd rather know than not.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich spreche nur Englisch, für eine wirklich gute Übersetzung braucht es also ein paar Nachrichten hin und her. Wenn du das nicht möchtest, melde es trotzdem als ganz normales Problem – ich weiß es lieber, als gar nicht davon zu erfahren."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo hablo inglés, así que acertar con una traducción implica intercambiar unos cuantos mensajes. Si no te apetece, repórtalo igualmente como un problema normal: prefiero saberlo a no saberlo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je ne parle que l'anglais : bien traduire demande donc quelques échanges de messages. Si cela ne vous tente pas, signalez-le quand même comme un problème ordinaire — je préfère le savoir."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parlo solo inglese, quindi sistemare una traduzione richiede qualche scambio di messaggi. Se non te la senti, segnalalo comunque come un normale problema: preferisco saperlo che non saperlo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開発者は英語しか話せないため、翻訳を正しく直すには何度かやり取りが必要です。それが難しい場合でも、通常の問題として報告していただければ大丈夫です。知らないままでいるより、ずっと助かります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저는 영어만 할 수 있어서, 번역을 제대로 고치려면 메일을 몇 번 주고받아야 합니다. 그게 부담스러우시면 일반 문제로 신고만 해주셔도 됩니다. 모르는 것보다는 아는 편이 훨씬 낫습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eu só falo inglês, então acertar uma tradução exige algumas mensagens de ida e volta. Se isso não for algo que você queira fazer, relate mesmo assim como um problema comum — prefiro saber a não saber."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我只会英文，所以要把翻译改对，可能需要来回几封邮件。如果你不想这么麻烦，也请把它当作普通问题反馈给我——我宁可知道，也不愿一无所知。"
+          }
+        }
+      }
     },
-    "System" : {
-      "comment" : "Label in a bug report's diagnostic block"
+    "I read and write English comfortably": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich lese und schreibe problemlos Englisch"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leo y escribo inglés sin problema"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je lis et j'écris l'anglais sans difficulté"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leggo e scrivo in inglese senza difficoltà"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "英語の読み書きに問題はありません"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "영어로 읽고 쓰는 데 어려움이 없습니다"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leio e escrevo inglês sem dificuldade"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我能顺畅地读写英文"
+          }
+        }
+      }
     },
-    "These details help me diagnose it — please leave them in:" : {
-      "comment" : "Explains the diagnostic block at the bottom of a feedback email"
+    "I read and write English comfortably, and I'm happy to go back and forth until the wording is right.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich lese und schreibe problemlos Englisch und tausche mich gerne so lange aus, bis die Formulierung passt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leo y escribo inglés sin problema, y no me importa intercambiar mensajes hasta dar con la redacción correcta."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je lis et j'écris l'anglais sans difficulté, et j'accepte volontiers d'échanger jusqu'à ce que la formulation soit juste."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leggo e scrivo in inglese senza difficoltà e sono disponibile a scambiarci qualche messaggio finché la formulazione non è quella giusta."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "英語の読み書きに問題はなく、表現が固まるまで何度でもやり取りできます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "영어로 읽고 쓰는 데 어려움이 없고, 표현이 정확해질 때까지 메일을 주고받아도 괜찮습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leio e escrevo inglês sem dificuldade e não me importo de trocar mensagens até a redação ficar certa."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我能顺畅地读写英文，也愿意来回沟通，直到措辞准确为止。"
+          }
+        }
+      }
+    },
+    "I'm happy to go back and forth on the wording": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ich tausche mich gerne über die Formulierung aus"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No me importa intercambiar mensajes sobre la redacción"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "J'accepte volontiers d'échanger sur la formulation"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sono disponibile a confrontarmi sulla formulazione"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "表現について何度でもやり取りできます"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "표현에 대해 메일을 주고받아도 괜찮습니다"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não me importo de trocar mensagens sobre a redação"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我愿意就措辞来回沟通"
+          }
+        }
+      }
+    },
+    "Improve the %@ translation": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Übersetzung auf %@ verbessern"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la traducción al %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer la traduction en %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora la traduzione in %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ の翻訳を改善"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 번역 개선하기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar a tradução para %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进 %@ 翻译"
+          }
+        }
+      }
+    },
+    "Language": {
+      "comment": "Label in a bug report's diagnostic block",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprache"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Langue"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lingua"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "言語"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "언어"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语言"
+          }
+        }
+      }
+    },
+    "My Other Apps": {
+      "comment": "Button that opens the developer's app portfolio",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meine anderen Apps"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mis otras apps"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mes autres apps"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le mie altre app"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ほかのApp"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제가 만든 다른 앱"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meus outros apps"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我的其他 App"
+          }
+        }
+      }
+    },
+    "Paste or type what it says now": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Füge ein oder tippe, was dort jetzt steht"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pega o escribe lo que dice ahora"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collez ou saisissez le texte actuel"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incolla o scrivi cosa dice ora"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在の表示を貼り付けるか入力"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 표시되는 문구를 붙여넣거나 입력하세요"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cole ou digite o que aparece agora"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "粘贴或输入当前的文案"
+          }
+        }
+      }
+    },
+    "Question": {
+      "comment": "Email subject suffix",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frage"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pregunta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Question"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domanda"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "質問"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "질문"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pergunta"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "问题"
+          }
+        }
+      }
+    },
+    "Rate %@": {
+      "comment": "Button title; parameter is the app name",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bewerten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valorar %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noter %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valuta %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ を評価"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 평가하기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avaliar %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "为 %@ 评分"
+          }
+        }
+      }
+    },
+    "Ratings are how people find it": {
+      "comment": "Subtitle under the rate button",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über Bewertungen finden Leute die App"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las valoraciones son lo que hace que la gente descubra la app"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "C'est grâce aux notes qu'on découvre l'app"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le valutazioni sono il modo in cui le persone la scoprono"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "評価が見つけてもらう手段です"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "평가가 있어야 사람들이 앱을 발견합니다"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As avaliações são o que faz as pessoas encontrarem o app"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人们靠评分找到它"
+          }
+        }
+      }
+    },
+    "Report an Issue": {
+      "comment": "Button that opens an email to report a bug",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Problem melden"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informar de un problema"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signaler un problème"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segnala un problema"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "問題を報告"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "문제 신고하기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relatar um problema"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "报告问题"
+          }
+        }
+      }
+    },
+    "Send it to me": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schick es mir"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envíamelo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envoyez-le-moi"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviamelo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送ってください"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저에게 보내주세요"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mande para mim"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把它发给我"
+          }
+        }
+      }
+    },
+    "Suggest a Feature": {
+      "comment": "Button that opens an email to request a feature",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funktion vorschlagen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugerir una función"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proposer une fonctionnalité"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proponi una funzionalità"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "機能を提案"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기능 제안하기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugerir um recurso"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "建议新功能"
+          }
+        }
+      }
+    },
+    "Support & Feedback": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support & Feedback"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soporte y comentarios"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistance et commentaires"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistenza e feedback"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サポートとフィードバック"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지원 및 피드백"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suporte e feedback"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支持与反馈"
+          }
+        }
+      }
+    },
+    "System": {
+      "comment": "Label in a bug report's diagnostic block",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistema"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Système"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistema"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システム"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistema"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统"
+          }
+        }
+      }
+    },
+    "These details help me diagnose it — please leave them in:": {
+      "comment": "Explains the diagnostic block at the bottom of a feedback email",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Angaben helfen mir bei der Diagnose – bitte lass sie stehen:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estos datos me ayudan a diagnosticarlo; por favor, no los borres:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ces informations m'aident à diagnostiquer le problème — merci de les laisser :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questi dettagli mi aiutano nella diagnosi, non rimuoverli:"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以下の情報は原因の特定に役立ちます。そのまま残してください:"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아래 정보는 문제 진단에 도움이 됩니다. 지우지 말고 그대로 보내주세요:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estes detalhes me ajudam a diagnosticar o problema — por favor, mantenha-os:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这些信息有助于我排查问题，请保留："
+          }
+        }
+      }
+    },
+    "This app was translated into %@ with machine help, and machine help only gets it so far. If something reads wrong, stiff, or just isn't how anyone actually says it — you're the only person who can tell me.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese App wurde mit maschineller Hilfe auf %@ übersetzt, und maschinelle Hilfe kommt nur bis zu einem gewissen Punkt. Wenn sich etwas falsch oder steif liest oder einfach nicht so, wie man es wirklich sagt – nur du kannst mir das sagen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta app se tradujo al %@ con ayuda automática, y la ayuda automática solo llega hasta cierto punto. Si algo suena mal, forzado o simplemente no es como se dice de verdad, eres la única persona que puede decírmelo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette app a été traduite en %@ à l'aide d'outils automatiques, et l'automatique a ses limites. Si quelque chose sonne faux, rigide, ou ne correspond pas à ce que l'on dit vraiment — vous êtes la seule personne à pouvoir me le dire."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questa app è stata tradotta in %@ con l'aiuto di strumenti automatici, che però hanno dei limiti. Se qualcosa suona sbagliato, artificioso o semplicemente non è come si direbbe davvero, sei l'unica persona che può dirmelo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このAppの%@への翻訳には機械翻訳を使っていますが、機械にできることには限りがあります。表現がおかしい、ぎこちない、実際には誰もそんな言い方をしない——それを教えられるのはあなただけです。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 앱의 %@ 번역은 기계 번역의 도움을 받았고, 기계 번역만으로는 한계가 있습니다. 어색하거나 딱딱하거나 실제로는 아무도 그렇게 말하지 않는 표현이 있다면, 알려주실 수 있는 분은 사용자뿐입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este app foi traduzido para %@ com ajuda de máquina, e a ajuda de máquina só vai até certo ponto. Se algo soar errado, travado ou simplesmente não for como as pessoas falam de verdade — só você pode me dizer."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这个 App 的 %@ 版本借助机器翻译完成，而机器翻译能做到的有限。如果哪里读起来不对、生硬，或者根本没人会这么说——只有你才能告诉我。"
+          }
+        }
+      }
+    },
+    "This opens your mail app so you can see exactly what's being sent. Nothing leaves your device until you hit send.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das öffnet deine Mail-App, damit du genau siehst, was gesendet wird. Nichts verlässt dein Gerät, bis du es abschickst."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esto abre tu app de correo para que veas exactamente lo que se envía. Nada sale de tu dispositivo hasta que pulses enviar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cela ouvre votre app Mail afin que vous voyiez exactement ce qui est envoyé. Rien ne quitte votre appareil tant que vous n'appuyez pas sur Envoyer."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si aprirà la tua app di posta, così potrai vedere esattamente cosa viene inviato. Nulla lascia il tuo dispositivo finché non premi Invia."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メールAppが開くので、送信内容をそのまま確認できます。送信するまで、デバイスから何も送信されません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "메일 앱이 열려서 어떤 내용이 전송되는지 직접 확인할 수 있습니다. 보내기를 누르기 전까지는 아무것도 기기를 떠나지 않습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isto abre seu app de e-mail para você ver exatamente o que será enviado. Nada sai do seu dispositivo até você enviar."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这会打开你的邮件 App，让你看清将要发送的全部内容。在你点击发送之前，不会有任何内容离开你的设备。"
+          }
+        }
+      }
+    },
+    "What it says now:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was dort jetzt steht:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo que dice ahora:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Texte actuel :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa dice ora:"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在の表示:"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 문구:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que diz agora:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当前的文案："
+          }
+        }
+      }
+    },
+    "What it should say in %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wie es auf %@ heißen sollte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo que debería decir en %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Texte proposé en %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa dovrebbe dire in %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ での適切な表現"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "올바른 %@ 문구"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que deveria dizer em %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 %@ 中应该怎么说"
+          }
+        }
+      }
+    },
+    "What it should say:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was dort stehen sollte:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo que debería decir:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Texte proposé :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa dovrebbe dire:"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正しい表現:"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "올바른 문구:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que deveria dizer:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应该改成："
+          }
+        }
+      }
+    },
+    "What needs fixing": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Was verbessert werden sollte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qué hay que corregir"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ce qui doit être corrigé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa c'è da correggere"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "修正が必要な箇所"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "고쳐야 할 부분"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que precisa de correção"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要修改的地方"
+          }
+        }
+      }
+    },
+    "Where in the app:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wo in der App:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En qué parte de la app:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Où dans l'app :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dove nell'app:"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App内の場所:"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱에서의 위치:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Onde no app:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 App 中的位置："
+          }
+        }
+      }
+    },
+    "Why / anything else:": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warum / sonstige Anmerkungen:"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por qué / cualquier otra cosa:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pourquoi / autre chose :"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perché / altro:"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "理由／その他:"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이유 / 그 외:"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por quê / mais alguma coisa:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原因／其他说明："
+          }
+        }
+      }
+    },
+    "e.g. Settings screen, the Save button": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "z. B. Einstellungen, die Taste „Sichern“"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "p. ej., la pantalla de Ajustes, el botón Guardar"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ex. : écran Réglages, bouton Enregistrer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "es. schermata Impostazioni, il pulsante Salva"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例: 設定画面、「保存」ボタン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "예: 설정 화면, 저장 버튼"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ex.: tela de Ajustes, o botão Salvar"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例如：设置页面、“存储”按钮"
+          }
+        }
+      }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
