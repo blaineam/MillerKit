@@ -5,7 +5,7 @@ feedback path that produces an actionable bug report, a review prompt that
 doesn't lie to itself, and a way to point people at the other apps.
 
 Dependency-free and tiny on purpose — Tilebreak imports this without dragging
-in a code editor. iOS 17 / macOS 14 / tvOS 17 / watchOS 10.
+in a code editor. iOS 16 / macOS 13 / tvOS 16 / watchOS 9.
 
 This is the `MillerKit.AppStoreRating` module
 [`_shared/docs/SUITE-FINDINGS-AND-BACKLOG.md` §4.6](../../_shared/docs/SUITE-FINDINGS-AND-BACKLOG.md)
@@ -36,23 +36,57 @@ rating.recordSignificantAction()     // sync finished, board cleared, export wri
 // 4. Ask on a success view, never on an error path
 .requestReviewAfterSuccess(rating, when: syncDidFinish)
 
-// 5. Settings / Help / About
+// 5. Settings / Help / About — inside a Form or List
 Form {
     SupportSection(app: app, extraContext: ["Remote": remote.kind])
     LoveThisAppSection(app: app)
+    AboutSection(app: app)          // version, privacy policy, app page
+}
+
+// …or anywhere at all. SupportDisclosure owns its own presentation, so it
+// works in a VStack of custom cards, a popover, a menu — a tap always opens
+// something.
+VStack {
+    SupportDisclosure(app: app, surface: .feedback)
+    SupportDisclosure(app: app, surface: .rating)
 }
 ```
+
+### The two URLs you don't get to choose
+
+`supportEmail` defaults to `apps@wemiller.com` and `privacyURL` to
+`https://wemiller.com/privacy/`, for every app. Both were per-app once and both
+drifted — into mailboxes that were never created and bounce silently, and into
+`/apps/<slug>/privacy/` paths that 404. `pageURL` is the one genuinely per-app
+URL and stays per-app. `MillerKitTests` asserts this across `SuiteApp.all`.
+
+### Never type a version number
+
+```swift
+Text(AppVersion.display())     // "1.3.0 (342)", read from the app bundle
+```
+
+`AppVersion` and `DiagnosticContext` read `CFBundleShortVersionString` from
+`Bundle.appBundle` — the enclosing `.app`, resolved upward from whatever bundle
+they're handed. Code inside a SwiftPM target that reaches for `Bundle.module`
+gets the *package's* resource bundle, whose version is its own (usually "1.0")
+and never the app's; nothing crashes, the About row just reports the wrong
+number forever. That is how Sami shipped 1.3.0 showing "Version 1.0.0".
 
 ## What each piece does
 
 | Type | Role |
 |---|---|
-| `SuiteApp` | Name, support address, App Store ID, portfolio URL. `SuiteRegistry.swift` has one per shipping app. |
+| `SuiteApp` | Name, App Store ID, per-app page URL — plus the suite-wide support address and privacy policy. `SuiteRegistry.swift` has one per shipping app, and `SuiteApp.all` lists them. |
+| `AppVersion` / `Bundle.appBundle` | The app's version and build, read from the app bundle and nowhere else. |
 | `DiagnosticContext` | App version + build, OS version, `iPhone17,1`-style hardware id, locale. Rendered as a labelled, explained block — not an opaque payload people delete. |
 | `Feedback.mailtoURL` | Guided `mailto:` per kind (bug / feature / question), plus optional per-app `extraContext`. Escapes `&=+?#`, which is what stops a body containing `&` from truncating the email. |
 | `RatingManager` | Decides *whether* to ask. Does not ask. |
 | `SupportSection` | Three buttons + the "I can't fix what I don't know about" footer. |
 | `LoveThisAppSection` | Rate + My Other Apps, with the honest reason a rating matters. |
+| `AboutSection` / `AboutRows` | Version, privacy policy, app page — as a `Section` or as plain rows. |
+| `SupportDisclosure` | A self-contained row: title, subtitle, chevron, and a tap that presents the real content. No Form, List, or navigation stack required. |
+| `SupportSheetButton` / `SupportWindowContent` | Presentation shells for apps with no settings screen (iOS sheet, macOS window). |
 
 ## Why `RatingManager` doesn't call StoreKit itself
 
@@ -85,7 +119,27 @@ of the suite and fall back to English automatically. `Bundle.module` only exists
 because that catalog is declared as a resource — remove it and every string
 silently becomes a compile error.
 
+## Rows that look tappable must be tappable
+
+`SupportSection` and `LoveThisAppSection` are `Section`s: outside a `Form` or
+`List` they render as *nothing*, silently. Sami paired that with a collapsible
+card wired to `.constant(false)`, and shipped two rows with disclosure chevrons
+that did nothing when tapped.
+
+`SupportDisclosure` is the answer for any host that isn't a Form: the row is a
+`Button`, the content is a sheet it presents itself, and `contentShape` makes
+the whole row — not just the text — the tap target. `style: .push` is available
+for rows that are definitely inside a `NavigationStack`; the default `.sheet`
+has no preconditions at all.
+
 ## Tests
 
-`swift test` — 9 tests covering mailto escaping, context ordering, review-URL
-construction, and every rating gate including the cooldown regression.
+`swift test` — 27 tests covering mailto escaping, context ordering, review-URL
+construction, the suite-wide support address and privacy URL across every
+registered app, version resolution out of a package bundle, the questions each
+feedback template must keep asking, and every rating gate including the cooldown
+regression.
+
+> On an iCloud-synced checkout, `swift test` can fail codesigning with
+> "resource fork, Finder information, or similar detritus not allowed".
+> Build elsewhere: `swift test --scratch-path /tmp/millerkit-build`.

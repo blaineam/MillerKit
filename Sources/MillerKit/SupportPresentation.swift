@@ -55,6 +55,9 @@ public struct SupportSheetButton<Label: View>: View {
         } label: {
             label
         }
+        // The row's dead zones — the gap between the label and the trailing
+        // edge — otherwise swallow taps, which reads as "the button is broken".
+        .contentShape(Rectangle())
         .sheet(isPresented: $showing) {
             SupportSheetContent(app: app, extraContext: extraContext, showsOtherApps: showsOtherApps)
         }
@@ -81,23 +84,27 @@ public struct SupportSheetContent: View {
     private let app: SuiteApp
     private let extraContext: [String: String]
     private let showsOtherApps: Bool
+    private let surface: SupportSurface
     @Environment(\.dismiss) private var dismiss
 
-    public init(app: SuiteApp, extraContext: [String: String] = [:], showsOtherApps: Bool = true) {
+    public init(
+        app: SuiteApp,
+        extraContext: [String: String] = [:],
+        showsOtherApps: Bool = true,
+        surface: SupportSurface = .everything
+    ) {
         self.app = app
         self.extraContext = extraContext
         self.showsOtherApps = showsOtherApps
+        self.surface = surface
     }
 
     public var body: some View {
         NavigationStack {
-            Form {
-                SupportSection(app: app, extraContext: extraContext)
-                LoveThisAppSection(app: app, showsOtherApps: showsOtherApps)
-            }
-            #if os(macOS)
-            .formStyle(.grouped)
-            #endif
+            SupportDetailContent(
+                app: app, extraContext: extraContext,
+                showsOtherApps: showsOtherApps, surface: surface
+            )
             .navigationTitle(Text("Support & Feedback", bundle: .module, comment: "Title of the support sheet"))
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
@@ -133,11 +140,10 @@ public struct SupportWindowContent: View {
     }
 
     public var body: some View {
-        Form {
-            SupportSection(app: app, extraContext: extraContext)
-            LoveThisAppSection(app: app, showsOtherApps: showsOtherApps)
-        }
-        .formStyle(.grouped)
+        SupportDetailContent(
+            app: app, extraContext: extraContext,
+            showsOtherApps: showsOtherApps, surface: .everything
+        )
         .frame(minWidth: 420, idealWidth: 440, maxWidth: 560,
                minHeight: 420, idealHeight: 560, maxHeight: .infinity)
     }

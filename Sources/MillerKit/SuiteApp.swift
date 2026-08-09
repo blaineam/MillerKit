@@ -4,28 +4,47 @@ import Foundation
 /// email, the rating prompt, the "more apps" link — is driven from one of these,
 /// declared once per app and passed in through the environment.
 public struct SuiteApp: Sendable, Hashable {
+    /// One support address for the whole suite. Per-app addresses were a
+    /// standing source of dead ends: a mailbox that was never actually created
+    /// bounces silently, and the sender never learns their report went nowhere.
+    /// One real inbox, sorted on the subject line (which already carries the
+    /// app name), beats nineteen aspirational ones.
+    public static let defaultSupportEmail = "apps@wemiller.com"
+
+    /// There is exactly one privacy policy and it covers every app. Apps had
+    /// been composing a per-app path — `…/apps/pinline/privacy/` — which does
+    /// not exist and 404s. Hence a constant rather than a convention.
+    public static let defaultPrivacyURL = URL(string: "https://wemiller.com/privacy/")!
+
+    /// Where "see my other apps" goes.
+    public static let defaultPortfolioURL = URL(string: "https://wemiller.com/apps/")!
+
     /// Display name, as the user sees it. Never localized — it's a brand.
     public let name: String
-    /// Where feedback goes. Per-app so mail rules can sort it.
+    /// Where feedback goes. Suite-wide; see `defaultSupportEmail`.
     public let supportEmail: String
     /// Numeric App Store ID, for the "write a review" deep link.
     public let appStoreID: String?
-    /// The app's own page on the portfolio.
+    /// The app's own page on the portfolio — the one genuinely per-app URL.
     public let pageURL: URL?
+    /// The privacy policy. Suite-wide; see `defaultPrivacyURL`.
+    public let privacyURL: URL
     /// Where "see my other apps" goes.
     public let portfolioURL: URL
 
     public init(
         name: String,
-        supportEmail: String,
+        supportEmail: String = SuiteApp.defaultSupportEmail,
         appStoreID: String? = nil,
         pageURL: URL? = nil,
-        portfolioURL: URL = URL(string: "https://wemiller.com/apps/")!
+        privacyURL: URL = SuiteApp.defaultPrivacyURL,
+        portfolioURL: URL = SuiteApp.defaultPortfolioURL
     ) {
         self.name = name
         self.supportEmail = supportEmail
         self.appStoreID = appStoreID
         self.pageURL = pageURL
+        self.privacyURL = privacyURL
         self.portfolioURL = portfolioURL
     }
 
@@ -53,10 +72,15 @@ public struct DiagnosticContext: Sendable {
     public let device: String
     public let locale: String
 
+    /// - Parameter bundle: any bundle belonging to the running app. It is
+    ///   resolved through `Bundle.appBundle(resolving:)` first, so handing this
+    ///   a package resource bundle (`Bundle.module`) still reports the *app's*
+    ///   version rather than the package's — the bug behind every "Version
+    ///   1.0.0" in an app that shipped 1.3.0.
     public init(bundle: Bundle = .main) {
-        let info = bundle.infoDictionary
-        appVersion = info?["CFBundleShortVersionString"] as? String ?? "?"
-        build = info?["CFBundleVersion"] as? String ?? "?"
+        let app = Bundle.appBundle(resolving: bundle)
+        appVersion = AppVersion.short(bundle: app)
+        build = AppVersion.build(bundle: app)
 
         #if os(macOS)
         let v = ProcessInfo.processInfo.operatingSystemVersion
@@ -99,8 +123,14 @@ public struct DiagnosticContext: Sendable {
         #endif
     }
 
-    /// The block appended to every report. Plain text, labelled, and explicitly
-    /// explained — people delete anything that looks like a tracking payload.
+    /// The block appended to every report. Plain text, labelled, legible, and
+    /// short enough to read in full before hitting send — people delete
+    /// anything that looks like a tracking payload, and they're right to.
+    ///
+    /// Five lines, and deliberately no more: version, build, OS, device model,
+    /// language. No identifiers, no account, no location, no logs the user
+    /// hasn't seen. Anything else has to come from the app as `extraContext`,
+    /// which the app author chose and the user can read and delete.
     public var reportFooter: String {
         """
         ——————————————
@@ -109,6 +139,7 @@ public struct DiagnosticContext: Sendable {
         \(name(for: "system")): \(system)
         \(name(for: "device")): \(device)
         \(name(for: "language")): \(locale)
+        \(String(localized: "That's everything attached — no identifiers, no location, no logs. Delete any line you'd rather not send.", bundle: .module, comment: "Reassurance under the diagnostic block in a feedback email"))
         """
     }
 

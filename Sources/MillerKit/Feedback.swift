@@ -53,6 +53,10 @@ public enum Feedback {
 
     static func template(for kind: FeedbackKind, appName: String) -> String {
         switch kind {
+        // These are the questions whose absence costs a round trip each.
+        // "What went wrong" on its own reliably produces "it doesn't work";
+        // what you did / expected / actually got is the difference between a
+        // report I can reproduce and one I can only reply to.
         case .bug:
             return String(
                 format: String(localized: """
@@ -60,18 +64,19 @@ public enum Feedback {
 
                 I ran into a problem with %@.
 
-                What went wrong:
+                What I was doing (the steps, as best you remember them):
 
-
-                Steps to reproduce:
-                1.
-                2.
-                3.
 
                 What I expected to happen:
 
 
-                How often it happens (always / sometimes / once):
+                What actually happened:
+
+
+                Does it happen every time? (always / sometimes / just once)
+
+
+                When it started (after an update, on a new device, or it always has):
 
                 """, bundle: .module, comment: "Body template for a bug report email; %@ is the app name"),
                 appName
@@ -83,13 +88,16 @@ public enum Feedback {
 
                 I have an idea for %@.
 
-                What I'd like to be able to do:
+                What I'm trying to get done:
 
 
-                Why it would help / the problem it solves:
+                The problem this would solve for me:
 
 
-                How I imagine it working:
+                How I work around it today:
+
+
+                How I imagine it working (optional — the problem matters more):
 
                 """, bundle: .module, comment: "Body template for a feature request email; %@ is the app name"),
                 appName
