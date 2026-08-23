@@ -89,8 +89,11 @@ public struct LoveThisAppSection: View {
                     }
                 }
             }
-            // Only the free, donation-funded apps carry this (see SuiteApp.supportURL).
-            if let support = app.supportURL {
+            // Only the free, donation-funded apps carry this (see SuiteApp.supportURL) —
+            // and never in App Store / TestFlight builds: an external funding link is
+            // Guideline 3.1.1 rejection bait, so `Distribution` gates it to direct
+            // downloads automatically (no per-app flag to forget).
+            if let support = app.supportURL, Distribution.allowsExternalFundingLinks {
                 Button {
                     openURL(support)
                 } label: {
