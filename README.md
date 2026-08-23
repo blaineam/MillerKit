@@ -83,10 +83,21 @@ number forever. That is how Sami shipped 1.3.0 showing "Version 1.0.0".
 | `Feedback.mailtoURL` | Guided `mailto:` per kind (bug / feature / question), plus optional per-app `extraContext`. Escapes `&=+?#`, which is what stops a body containing `&` from truncating the email. |
 | `RatingManager` | Decides *whether* to ask. Does not ask. |
 | `SupportSection` | Three buttons + the "I can't fix what I don't know about" footer. |
-| `LoveThisAppSection` | Rate + My Other Apps, with the honest reason a rating matters. |
+| `LoveThisAppSection` | Rate + My Other Apps, with the honest reason a rating matters. Apps with a `supportURL` (the free, donation-funded ones: Haven, Blip, Glint) also get a **Support Future Development** row that opens https://wemiller.com/support/ — the one page listing every way to fund the work (GitHub Sponsors, Ko-fi, a one-time tip), so adding or dropping a service is a website edit, not an app release. |
 | `AboutSection` / `AboutRows` | Version, privacy policy, app page — as a `Section` or as plain rows. |
 | `SupportDisclosure` | A self-contained row: title, subtitle, chevron, and a tap that presents the real content. No Form, List, or navigation stack required. |
 | `SupportSheetButton` / `SupportWindowContent` | Presentation shells for apps with no settings screen (iOS sheet, macOS window). |
+
+## The support row is opt-in, and only for the free apps
+
+`SuiteApp.supportURL` is `nil` by default. The registry sets it (to
+`SuiteApp.defaultSupportURL`) for exactly three apps — Haven, Blip and Glint — because
+those are free, with no ads and no purchases, and are funded by the people who want them to
+exist. A paid app asking for donations reads as odd, and every external funding link inside
+an App Store build is something App Review can read as a purchase mechanism (Guideline
+3.1.1), so the blast radius is kept to the apps that actually need it. The test
+`testOnlyTheFreeAppsCarryTheSupportRow` pins that list; widening it is a deliberate edit to
+the registry and the test, not a default.
 
 ## Why `RatingManager` doesn't call StoreKit itself
 

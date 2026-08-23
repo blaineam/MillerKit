@@ -34,6 +34,18 @@ final class SuiteAppDefaultsTests: XCTestCase {
         XCTAssertEqual(Set(pages).count, pages.count, "two apps share a page URL")
     }
 
+    /// The support row is for the free, donation-funded apps and nobody else: a
+    /// paid app asking for donations is odd, and every external funding link in
+    /// an App Store build is Guideline 3.1.1 exposure. Exactly three carry it.
+    func testOnlyTheFreeAppsCarryTheSupportRow() {
+        let free = SuiteApp.all.filter { $0.supportURL != nil }.map(\.name).sorted()
+        XCTAssertEqual(free, ["Blip", "Glint", "Haven"])
+        for app in SuiteApp.all where app.supportURL != nil {
+            XCTAssertEqual(app.supportURL, SuiteApp.defaultSupportURL, "\(app.name) must use the one support page")
+        }
+        XCTAssertEqual(SuiteApp.defaultSupportURL.absoluteString, "https://wemiller.com/support/")
+    }
+
     func testMailtoGoesToTheSharedInbox() throws {
         let url = try XCTUnwrap(Feedback.mailtoURL(app: .sami, kind: .bug))
         XCTAssertTrue(url.absoluteString.hasPrefix("mailto:apps@wemiller.com?"))

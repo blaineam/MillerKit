@@ -89,6 +89,24 @@ public struct LoveThisAppSection: View {
                     }
                 }
             }
+            // Only the free, donation-funded apps carry this (see SuiteApp.supportURL).
+            if let support = app.supportURL {
+                Button {
+                    openURL(support)
+                } label: {
+                    HStack {
+                        Image(systemName: "heart.fill").foregroundColor(.pink)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Support Future Development", bundle: .module, comment: "Button that opens the developer's support/funding page")
+                                .foregroundColor(.primary)
+                            Text("Free, no ads — help fund what comes next", bundle: .module, comment: "Subtitle under the support-development button")
+                                .font(.caption).foregroundColor(.secondary)
+                        }
+                        Spacer()
+                        Image(systemName: "arrow.up.right.square").foregroundColor(.secondary).font(.caption)
+                    }
+                }
+            }
             if showsOtherApps {
                 Button {
                     openURL(app.portfolioURL)

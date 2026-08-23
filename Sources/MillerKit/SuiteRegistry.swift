@@ -18,8 +18,10 @@ public extension SuiteApp {
     static let enterSpace = SuiteApp(
         name: "Enter Space", appStoreID: "6746350540", pageURL: page("enter-space")
     )
+    /// Free, donation-funded — the support row is on (see `SuiteApp.supportURL`).
     static let haven = SuiteApp(
-        name: "Haven", appStoreID: "6782147901", pageURL: page("haven")
+        name: "Haven", appStoreID: "6782147901", pageURL: page("haven"),
+        supportURL: SuiteApp.defaultSupportURL
     )
     static let ari = SuiteApp(
         name: "Ari Helper", appStoreID: "6480045555", pageURL: page("ari-helper")
@@ -30,8 +32,10 @@ public extension SuiteApp {
     static let panoOwl = SuiteApp(
         name: "Pano Owl", appStoreID: "1560273409", pageURL: page("pano-owl")
     )
+    /// Free (direct download, Homebrew and the Mac App Store alike) — support row on.
     static let blip = SuiteApp(
-        name: "Blip", appStoreID: "6762329495", pageURL: page("blip")
+        name: "Blip", appStoreID: "6762329495", pageURL: page("blip"),
+        supportURL: SuiteApp.defaultSupportURL
     )
     static let embr = SuiteApp(
         name: "Embr", appStoreID: "6727006089", pageURL: page("embr")
@@ -57,7 +61,8 @@ public extension SuiteApp {
     /// App Store ID — `writeReviewURL` is nil and LoveThisAppSection quietly
     /// drops the rate row, leaving just the link to the other apps.
     static let glint = SuiteApp(
-        name: "Glint", appStoreID: nil, pageURL: page("glint")
+        name: "Glint", appStoreID: nil, pageURL: page("glint"),
+        supportURL: SuiteApp.defaultSupportURL
     )
 
     // ── Games ──────────────────────────────────────────────────────────────

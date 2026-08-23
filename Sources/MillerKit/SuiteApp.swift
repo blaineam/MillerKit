@@ -19,6 +19,12 @@ public struct SuiteApp: Sendable, Hashable {
     /// Where "see my other apps" goes.
     public static let defaultPortfolioURL = URL(string: "https://wemiller.com/apps/")!
 
+    /// Where "support future development" goes — the one page that lists every
+    /// way to fund the work (GitHub Sponsors, Ko-fi, a one-time tip). The page
+    /// is the link target, not the individual services, so adding or dropping
+    /// a service is a website edit rather than an app release.
+    public static let defaultSupportURL = URL(string: "https://wemiller.com/support/")!
+
     /// Display name, as the user sees it. Never localized — it's a brand.
     public let name: String
     /// Where feedback goes. Suite-wide; see `defaultSupportEmail`.
@@ -31,6 +37,12 @@ public struct SuiteApp: Sendable, Hashable {
     public let privacyURL: URL
     /// Where "see my other apps" goes.
     public let portfolioURL: URL
+    /// Where "support future development" goes, or nil to show no such row.
+    /// Opt-in on purpose: it belongs in the FREE apps (Haven, Blip, Glint —
+    /// donation-funded, no ads, no purchases), not in an app the user already
+    /// paid for, and every extra external funding link in an App Store build is
+    /// something App Review can read as a purchase mechanism (Guideline 3.1.1).
+    public let supportURL: URL?
 
     public init(
         name: String,
@@ -38,7 +50,8 @@ public struct SuiteApp: Sendable, Hashable {
         appStoreID: String? = nil,
         pageURL: URL? = nil,
         privacyURL: URL = SuiteApp.defaultPrivacyURL,
-        portfolioURL: URL = SuiteApp.defaultPortfolioURL
+        portfolioURL: URL = SuiteApp.defaultPortfolioURL,
+        supportURL: URL? = nil
     ) {
         self.name = name
         self.supportEmail = supportEmail
@@ -46,6 +59,7 @@ public struct SuiteApp: Sendable, Hashable {
         self.pageURL = pageURL
         self.privacyURL = privacyURL
         self.portfolioURL = portfolioURL
+        self.supportURL = supportURL
     }
 
     /// Deep link that opens the App Store review sheet directly. This is the
