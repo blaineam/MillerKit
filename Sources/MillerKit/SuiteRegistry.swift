@@ -78,6 +78,9 @@ public extension SuiteApp {
     static let zap = SuiteApp(
         name: "Zap", appStoreID: "6776907420", pageURL: page("zap")
     )
+    static let kern = SuiteApp(
+        name: "Kern", appStoreID: "6806896106", pageURL: page("kern")
+    )
 
     static let pinline = SuiteApp(
         name: "Pinline", appStoreID: "6772773442", pageURL: page("pinline")
@@ -96,6 +99,6 @@ public extension SuiteApp {
     static let all: [SuiteApp] = [
         .enterSpace, .haven, .ari, .sami, .panoOwl, .blip, .embr, .miSpeaks,
         .deepSi, .lumaEditor, .revela, .sightQuick, .glint,
-        .tilebreak, .triAdd, .zap, .pinline, .ridgeshot, .wiseFlyer,
+        .tilebreak, .triAdd, .zap, .kern, .pinline, .ridgeshot, .wiseFlyer,
     ]
 }
