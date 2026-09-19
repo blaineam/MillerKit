@@ -56,6 +56,9 @@ public extension SuiteApp {
     static let sightQuick = SuiteApp(
         name: "SightQuick", appStoreID: "6776991403", pageURL: page("sightquick")
     )
+    static let scriptureAlone = SuiteApp(
+        name: "Scripture Alone", appStoreID: "6813729762", pageURL: page("scripture-alone")
+    )
 
     /// Glint ships outside the App Store (direct Mac download), so it has no
     /// App Store ID — `writeReviewURL` is nil and LoveThisAppSection quietly
@@ -98,7 +101,7 @@ public extension SuiteApp {
     /// Add new apps here as well as above.
     static let all: [SuiteApp] = [
         .enterSpace, .haven, .ari, .sami, .panoOwl, .blip, .embr, .miSpeaks,
-        .deepSi, .lumaEditor, .revela, .sightQuick, .glint,
+        .deepSi, .lumaEditor, .revela, .sightQuick, .scriptureAlone, .glint,
         .tilebreak, .triAdd, .zap, .kern, .pinline, .ridgeshot, .wiseFlyer,
     ]
 }
