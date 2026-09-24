@@ -154,3 +154,7 @@ regression.
 > On an iCloud-synced checkout, `swift test` can fail codesigning with
 > "resource fork, Finder information, or similar detritus not allowed".
 > Build elsewhere: `swift test --scratch-path /tmp/millerkit-build`.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
